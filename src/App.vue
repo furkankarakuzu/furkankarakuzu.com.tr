@@ -3,7 +3,7 @@
     <NavBar />
     <hr />
     <router-view></router-view>
-    <hr />
+    <hr class="mt-5" />
     <Footer />
   </FurkanApp>
 </template>
@@ -25,4 +25,7 @@ export default {
 
 <style lang="scss">
 @import "./assets/css/bootstrap/scss/bootstrap.scss";
+hr {
+  margin: 0 !important;
+}
 </style>

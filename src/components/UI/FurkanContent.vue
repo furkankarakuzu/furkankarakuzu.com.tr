@@ -4,7 +4,7 @@ export default {
   props: {
     text: {
       type: String,
-      default: "left",
+      default: "",
     },
     color: {
       type: String,
@@ -21,7 +21,7 @@ export default {
 <template>
   <div
     :class="[
-      `text-${text}`,
+      text ? `text-${text}` : '',
       color ? `text-${color}` : '',
       bg ? `bg-${bg}` : '',
     ]"

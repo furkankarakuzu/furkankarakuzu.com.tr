@@ -4,10 +4,12 @@ export default {};
 
 <template>
   <FurkanContainer>
-    <FurkanContent class="mt-2" text="center">
+    <FurkanContent class="mt-4" text="center">
       <FurkanImage
         :src="require('@/assets/img/pp.jpg')"
         alt="Furkan Karakuzu"
+        width="300"
+        height="300"
       />
     </FurkanContent>
     <FurkanContent text="left">
