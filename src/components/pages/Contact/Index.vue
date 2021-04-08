@@ -26,6 +26,40 @@ export default {
   <FurkanContainer>
     <FurkanTitle class="my-4" text="center">İletişim</FurkanTitle>
     <FurkanRow>
+      <FurkanCol offset="md-3" md="6">
+        <FurkanRow>
+          <FurkanCol sm="3">
+            <FurkanIcon
+              to="https://twitter.com/furkannjs"
+              icon="fab fa-twitter"
+              class="fs-1 p-2"
+            ></FurkanIcon>
+          </FurkanCol>
+          <FurkanCol sm="3">
+            <FurkanIcon
+              to="https://www.youtube.com/channel/UC0stWpFmiEqPVfWJqwrI0Qg"
+              icon="fab fa-youtube"
+              class="fs-1 p-2"
+            ></FurkanIcon>
+          </FurkanCol>
+          <FurkanCol sm="3">
+            <FurkanIcon
+              to="https://www.linkedin.com/in/furkankarakuzu/"
+              icon="fab fa-linkedin"
+              class="fs-1 p-2"
+            ></FurkanIcon>
+          </FurkanCol>
+          <FurkanCol sm="3">
+            <FurkanIcon
+              to="https://github.com/furkankarakuzu"
+              icon="fab fa-github"
+              class="fs-1 p-2"
+            ></FurkanIcon>
+          </FurkanCol>
+        </FurkanRow>
+      </FurkanCol>
+    </FurkanRow>
+    <FurkanRow class="mt-3">
       <FurkanCol sm="6">
         <FurkanImage
           :src="require('@/assets/img/pp.jpg')"

@@ -5,6 +5,7 @@ Vue.component('FurkanApp',()=> import('@/components/UI/FurkanApp'));
 Vue.component('FurkanRow',()=> import('@/components/UI/FurkanRow'));
 Vue.component('FurkanNav',()=> import('@/components/UI/FurkanNav'));
 Vue.component('FurkanForm',()=> import('@/components/UI/FurkanForm'));
+Vue.component('FurkanIcon',()=> import('@/components/UI/FurkanIcon'));
 Vue.component('FurkanText',()=> import('@/components/UI/FurkanText'));
 Vue.component('FurkanImage',()=> import('@/components/UI/FurkanImage'));
 Vue.component('FurkanTitle',()=> import('@/components/UI/FurkanTitle'));
