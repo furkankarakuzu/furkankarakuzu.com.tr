@@ -2,6 +2,10 @@
 export default {
   name: "FurkanCol",
   props: {
+    offset: {
+      type: String,
+      default: null,
+    },
     col: {
       type: [String, Number],
       default: null,
@@ -25,6 +29,7 @@ export default {
 <template>
   <FurkanContent
     :class="[
+      offset ? `offset-${offset}` : '',
       col ? `col-${col}` : '',
       sm && `col-sm-${sm}`,
       md && `col-md-${md}`,

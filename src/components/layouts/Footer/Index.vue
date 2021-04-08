@@ -7,7 +7,12 @@ export default {};
     <FurkanContent color="white-50">
       <FurkanTitle size="4">
         Bu sitenin kaynak kodlarına
-        <a class="text-decoration-none" href="#" target="_blank">Github</a>
+        <a
+          class="text-decoration-none"
+          href="https://github.com/furkankarakuzu/furkankarakuzu.com.tr"
+          target="_blank"
+          >Github</a
+        >
         üzerinden ulaşabilirsiniz.
       </FurkanTitle>
     </FurkanContent>
