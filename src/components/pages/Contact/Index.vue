@@ -25,49 +25,16 @@ export default {
 <template>
   <FurkanContainer>
     <FurkanTitle class="my-4" text="center">İletişim</FurkanTitle>
-    <FurkanRow>
-      <FurkanCol offset="md-3" md="6">
-        <FurkanRow>
-          <FurkanCol sm="3">
-            <FurkanIcon
-              to="https://twitter.com/furkannjs"
-              icon="fab fa-twitter"
-              class="fs-1 p-2"
-            ></FurkanIcon>
-          </FurkanCol>
-          <FurkanCol sm="3">
-            <FurkanIcon
-              to="https://www.youtube.com/channel/UC0stWpFmiEqPVfWJqwrI0Qg"
-              icon="fab fa-youtube"
-              class="fs-1 p-2"
-            ></FurkanIcon>
-          </FurkanCol>
-          <FurkanCol sm="3">
-            <FurkanIcon
-              to="https://www.linkedin.com/in/furkankarakuzu/"
-              icon="fab fa-linkedin"
-              class="fs-1 p-2"
-            ></FurkanIcon>
-          </FurkanCol>
-          <FurkanCol sm="3">
-            <FurkanIcon
-              to="https://github.com/furkankarakuzu"
-              icon="fab fa-github"
-              class="fs-1 p-2"
-            ></FurkanIcon>
-          </FurkanCol>
-        </FurkanRow>
-      </FurkanCol>
-    </FurkanRow>
-    <FurkanRow class="mt-3">
+    <FurkanRow class="my-3">
       <FurkanCol sm="6">
         <FurkanImage
           :src="require('@/assets/img/pp.jpg')"
           alt="Furkan Karakuzu"
+          round
         />
       </FurkanCol>
-      <FurkanCol sm="6" class="my-auto mt-2 mt-sm-0">
-        <FurkanForm id="contact-form">
+      <FurkanCol sm="6" class="mt-2 mt-sm-0  d-flex align-items-center">
+        <FurkanForm id="contact-form" class="w-100">
           <FurkanInput
             v-model="contactForm.name"
             icon="fas fa-file-signature"
