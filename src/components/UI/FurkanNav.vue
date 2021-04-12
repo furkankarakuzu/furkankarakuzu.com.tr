@@ -6,6 +6,10 @@ export default {
       type: String,
       default: null,
     },
+    iconColor: {
+      type: String,
+      default: null,
+    },
     siteName: {
       type: String,
       default: "",
@@ -24,6 +28,7 @@ export default {
       <a href="#" v-if="siteName">{{ siteName }}</a>
       <button
         class="navbar-toggler rounded-circle fs-1"
+        :class="iconColor ? `text-${iconColor}` : ''"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNavDropdown"
