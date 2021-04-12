@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-  <FurkanNav icon="FK">
+  <FurkanNav icon="FK" iconColor="white-50">
     <FurkanNavItem v-for="(item, index) in navItems" :key="index" :to="item.to">
       <FurkanTitle size="5">{{ item.name }}</FurkanTitle>
     </FurkanNavItem>
