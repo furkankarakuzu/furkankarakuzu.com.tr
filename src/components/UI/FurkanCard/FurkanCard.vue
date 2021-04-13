@@ -5,12 +5,19 @@ export default {
       type: String,
       default: "",
     },
+    bg: {
+      type: String,
+      default: "",
+    },
   },
 };
 </script>
 
 <template>
-  <FurkanContent class="card" :class="text ? `text-${text}` : ''">
+  <FurkanContent
+    class="card"
+    :class="[text ? `text-${text}` : '', bg ? `bg-${bg}` : '']"
+  >
     <slot />
   </FurkanContent>
 </template>
