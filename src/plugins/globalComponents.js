@@ -18,5 +18,7 @@ Vue.component('FurkanContainer',()=> import('@/components/UI/FurkanContainer'));
 Vue.component('FurkanAccordion',()=> import('@/components/UI/FurkanAccordion'));
 Vue.component('FurkanCard',()=> import('@/components/UI/FurkanCard/FurkanCard'));
 Vue.component('FurkanCardBody',()=> import('@/components/UI/FurkanCard/FurkanCardBody'));
+Vue.component('FurkanCardText',()=> import('@/components/UI/FurkanCard/FurkanCardText'));
+Vue.component('FurkanCardTitle',()=> import('@/components/UI/FurkanCard/FurkanCardTitle'));
 Vue.component('FurkanCardHeader',()=> import('@/components/UI/FurkanCard/FurkanCardHeader'));
 Vue.component('FurkanCardFooter',()=> import('@/components/UI/FurkanCard/FurkanCardFooter'));
