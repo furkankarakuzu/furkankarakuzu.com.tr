@@ -27,6 +27,12 @@ const Education = (resolve) => {
   })
 }
 
+const EducationDetail = (resolve) => {
+  require.ensure(["@/components/pages/Education/EducationDetail"],()=>{
+      resolve(require("@/components/pages/Education/EducationDetail"));
+  })
+}
+
 const Projects = (resolve) => {
   require.ensure(["@/components/pages/Projects/Index"],()=>{
       resolve(require("@/components/pages/Projects/Index"));
@@ -46,6 +52,7 @@ const router = new VueRouter({
     {path:'/posts', component:Posts},
     {path:'/post/:id', component:PostDetail},
     {path:'/education', component:Education},
+    {path:'/education/:id', component:EducationDetail},
     {path:'/projects', component:Projects},
     {path:'/contact', component:Contact}
   ],
