@@ -29,7 +29,13 @@ export default {
         </FurkanText>
       </FurkanCol>
       <FurkanCol md="6">
-        <FurkanAccordion :items="projects" />
+        <FurkanContent
+          v-if="projects.length < 1"
+          class="spinner-border  position-absolute start-50 mt-2"
+          role="status"
+        >
+        </FurkanContent>
+        <FurkanAccordion v-else :items="projects" />
       </FurkanCol>
     </FurkanRow>
   </FurkanContainer>

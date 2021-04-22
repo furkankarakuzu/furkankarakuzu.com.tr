@@ -12,7 +12,7 @@ export default {
 
 <template>
   <FurkanContent
-    class="furkan-app"
+    class="furkan-app d-flex flex-column"
     :class="color ? `bg-${color} text-white` : ''"
   >
     <slot />
@@ -21,6 +21,6 @@ export default {
 
 <style scoped>
 .furkan-app {
-  height: 100vh;
+  height: 100vh !important;
 }
 </style>

@@ -16,7 +16,13 @@ export default {
 </script>
 <template>
   <FurkanContainer>
-    <FurkanContent class="mt-2" v-for="post in posts" :key="post.id">
+    <FurkanContent
+      v-if="posts.length < 1"
+      class="spinner-border  position-absolute start-50 mt-2"
+      role="status"
+    >
+    </FurkanContent>
+    <FurkanContent v-else class="mt-2" v-for="post in posts" :key="post.id">
       <Post>
         <template #PostImage>
           <FurkanImage width="200" height="200" :src="post.image" />

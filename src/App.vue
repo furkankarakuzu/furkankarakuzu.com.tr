@@ -3,7 +3,6 @@
     <NavBar />
     <hr />
     <router-view></router-view>
-    <hr class="mt-5" />
     <Footer />
   </FurkanApp>
 </template>
